@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <f:metadata>
+        <f:viewParam name="dummyParameterForOnceCallEvent"/>
+        <f:event listener="#{core.fiscal()}" type="preRenderView"/>
+    </f:metadata>
+
+    <h:head></h:head>
+
+    <body>
+
+        Добро пожаловать!
+        <br/><br/>
+        Ваш аутентифицированный ID: <b>#{core.validatedId}</b>
+        <br/>
+        Дата рождения: <b>#{core.userAutoReqProps.born}</b>
+        <br/>
+        E-mail: <b>#{core.userAutoReqProps.email}</b>
+        <br/>
+        Имя: <b>#{core.userAutoReqProps.firstName}</b>
+        <br/>
+        Фамилия: <b>#{core.userAutoReqProps.lastName}</b>
+        <br/>
+        <h:panelGrid rendered="#{core.userAutoReqProps.sex!=null}">
+            Пол: <b>#{core.userAutoReqProps.sex?"М":"Ж"}</b>
+            <br/>
+        </h:panelGrid>
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <h:head></h:head>
+
+    <body>
+        <h:form id="loginForm">
+            <fieldset>
+                <legend><i>Вход по технологии OAuth</i></legend>
+                <div align="center">
+                    <h:commandLink action="#{core.authorize('VKLOGIN')}" title="ВКонтакте" id="vkLogin">
+                        <img src="../habrapack/vk.png" alt="ВКонтакте"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('FBLOGIN')}" title="FaceBook" id="fbLogin">
+                        <img src="../habrapack/facebook.png" alt="FaceBook"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('MRLOGIN')}" title="Мой мир" id="mRLogin">
+                        <img src="../habrapack/mail_ru.png" alt="Мой мир"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('YALOGIN')}" title="Яндекс" id="yALogin">
+                        <img src="../habrapack/yandex.png" alt="Яндекс"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('ODLOGIN')}" title="Одноклассники" id="oDLogin">
+                        <img src="../habrapack/ok.png" alt="Одноклассники"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('GOOLOGIN')}" title="Google" id="gooLogin">
+                        <img src="../habrapack/google.png" alt="Google"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('TWLOGIN')}" title="Twitter" id="twLogin">
+                        <img src="../habrapack/twitter.png" alt="Twitter"/>
+                    </h:commandLink>
+
+                    <h:commandLink action="#{core.authorize('LILOGIN')}" title="LinkedId" id="liLogin">
+                        <img src="../habrapack/linkedin.png" alt="LinkedIn"/>
+                    </h:commandLink>
+                </div>
+            </fieldset>
+        </h:form>
+
+    </body>
+</html>
