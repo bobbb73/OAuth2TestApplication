@@ -4,7 +4,7 @@
  <display-name>JSF2OAuthLogin</display-name>
   <context-param>
   <param-name>OAuthPropertiesPath</param-name>
-  <param-value>/opt/oauth/oauth.properties</param-value>
+  <param-value>/opt/oauth/oauth-jsf2.properties</param-value>
  </context-param>
  <servlet>
   <servlet-name>Faces Servlet</servlet-name>

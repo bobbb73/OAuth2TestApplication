@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+oauth2-test-application.iml
+target/
